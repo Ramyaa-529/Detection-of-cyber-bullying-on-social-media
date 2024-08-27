@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <style>
+    body{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdoWK4MdU1rqV5aEQmZSnr9ADwwVGTirTo-7R7fj9DDw&s);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+    
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#navbar{
+    height: 70px;
+    background-color: rgb(0, 63, 87);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logoblock,#menublock{
+    height: 70px;
+    width: 400px;
+display:flex;
+justify-content: space-between;
+align-items: center;
+    
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+<div id="logoblock">
+    <h2>Cyberbullying On Social Media</h2>
+
+</div>
+<div id="menublock">
+    <a href="/" style="color: aliceblue;">Home</a>
+    <a href="wlogin.html"style="color: aliceblue;">Wikkipedia Login</a>
+    <a href="tlogin.html"style="color: aliceblue;">Twiter Login</a>
+    
+    </div>
+</div>
+<h1 style="color: aliceblue;display: flex;justify-content: center;">Upload Image</h1>
+<form action="upload.html" method="post" enctype="multipart/form-data">
+   
+    <input type="file" id="imageUpload" name="image" accept="image/*">
+    <br><br>
+    <input type="submit" value="Upload image">
+</form>
+</body>
+</html>

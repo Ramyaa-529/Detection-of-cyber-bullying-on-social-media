@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<style>
+   body,html {
+ height: 100px;
+ margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
+
+    }
+    body{
+        background-image: url(https://t3.ftcdn.net/jpg/03/99/24/82/360_F_399248286_Ogm0T8CFeauN4Hdn42FqWfsCE02dJBbX.jpg);
+        background-size: cover;
+        background-position: center;
+        
+        color: aliceblue;
+        
+
+    }
+    .login-container{
+      background-image: none;
+        padding: 200px;
+        border-radius: 50px;
+
+       display: flex;
+        text-overflow: clip;
+        color: rgb(248, 252, 255);
+
+    }
+    .login-form h2{
+        margin-bottom: 15px;
+
+    }
+    .input-group{
+        margin-bottom: 15px;
+
+    }
+    .input-group label{
+        display: block;
+        margin-bottom: 5px;
+
+    }
+    .input-group input{
+        width: 100%;
+        padding: 10px;
+        border:1px solid;
+        border-radius: 5px;
+       
+    }
+    button{
+        width:100%;
+        padding: 10px;
+        border: none;
+        border-radius: 16px;
+        background-color: rgb(5, 18, 25);
+        color: aliceblue;
+    
+    }
+    button:hover{
+        background: fixed;
+
+    }
+    a{
+      height: 20px;
+      width: 50px;
+      color: antiquewhite;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   align-items: center;
+     font-size: large;
+     font-weight: 50;
+    }
+    
+</style>
+<body>
+    
+ 
+    
+    <h1>Cyberbullying On Social Media</h1>
+    <div style="display: flex; justify-content: flex-end;">
+    
+        <a href="/">Home</a><br>
+    
+    </div>
+    <div class ="login-container">
+        <div class="login-form">
+            <h1>Twitter Login</h1>
+            <form action="login"method="post">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                    </div>
+                    <div>
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                            </div>
+                          <button onclick="validate()">Login</button></a>
+                        </form>
+                      
+                       
+</div>
+                    </div>
+
+                    <script>
+                        function validate(){
+                            var username =document.getElementById('username').value;
+
+                            var password =docuent.getElementById('password').value;
+                            if(username=='admin' && password=="1234"){
+                                alert('login success');
+                                window.open('/tupload','_self');
+                            }
+                            else{
+                                alert("invalid username or password.Please try again");
+                            }
+                        }
+                    </script>
+
+            
+</body>
+</html>
